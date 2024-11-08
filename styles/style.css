@@ -10,7 +10,7 @@
 
 html, body {
     height: 100%;
-    overflow: hidden;
+    overflow-y: auto; /* Permite a rolagem vertical no body */
 }
 
 
@@ -140,3 +140,27 @@ strong {
 
 }
 
+@media (max-width: 600px) {
+
+    .intro-container {
+        flex-direction: column; /* Muda a disposição para coluna */
+        padding: 1.5em;
+        gap: 1em; /* Ajusta o espaçamento entre os elementos */
+    }
+
+    .bio {
+        width: 150px; /* Diminui o tamanho da imagem */
+        height: 150px; /* Mantém o aspecto circular */
+    }
+
+    .info h1 {
+        font-size: 24px; /* Ajusta o tamanho do título */
+        text-align: center; /* Centraliza o título */
+    }
+
+    .info p {
+        font-size: 16px; /* Ajusta o tamanho do texto */
+        text-align: center; /* Centraliza o parágrafo */
+        text-align: left;
+    }
+}
