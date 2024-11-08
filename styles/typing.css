@@ -1,0 +1,22 @@
+.typing-container {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+
+#typing-text {
+    white-space: nowrap;
+    overflow: hidden;
+    color: white;
+}
+
+.cursor {
+    animation: blink 0.7s step-end infinite;
+    font-weight: bold;
+    color: white;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}

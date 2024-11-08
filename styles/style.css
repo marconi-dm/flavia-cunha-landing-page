@@ -1,0 +1,142 @@
+@import url('reset.css');
+@import url('typing.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+
+body {
+    /* overflow-y: scroll;
+    scroll-snap-type: y mandatory; */
+    background: #211f1c;
+    font-family: "Poppins", serif;;
+}
+
+header {
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    width: 24px;
+    height: 24px;
+    background: whitesmoke;
+    border-radius: 50%;
+    margin: 0 0.5em;
+    box-shadow: 
+        0px 0px 8px rgba(0, 0, 0, 0.2),  /* Sombra suave */
+        inset -3px -3px 6px rgba(0, 0, 0, 0.3), /* Efeito de profundidade */
+        inset 3px 3px 8px rgba(255, 255, 255, 0.1); /* Luz refletida para dar volume */
+}
+
+
+
+header ul {
+    display: flex;
+    gap: 1em;
+    margin-right: 1em;
+}
+
+.section-container {
+    height: auto; /* Cada section ocupa a altura total da tela */
+    width: 100vw; /* Cada section ocupa toda a largura da tela */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start; /* Alinha o início de cada section no snap */
+}
+
+.intro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 60%; /* Limita a largura do conteúdo centralizado */
+    background: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(230, 225, 225, 0.856);
+    padding: 2em;
+    overflow: hidden;
+    gap: 2em; /* Espaçamento entre os elementos */
+}
+
+.info {
+    flex: 1; /* Ocupa o espaço restante à esquerda */
+    text-align: left;
+}
+
+.info h1 {
+    font-size: 40px;
+    padding-bottom: 1em;
+}
+
+.info p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.info ul {
+    display: flex;
+    gap: 1em;
+    padding-top: 1.5em;
+}
+
+.bio {
+  width: 400px; /* Define o tamanho do contêiner para ser quadrado */
+  height: 400px; /* Define a altura igual à largura */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Garante que a imagem não exceda o contêiner */
+}
+
+.bio img {
+  width: 100%; /* A imagem ocupa todo o contêiner .bio */
+  height: 100%; /* A imagem ocupa todo o contêiner .bio */
+  object-fit: cover; /* Garante que a imagem se ajuste corretamente */
+  border-radius: 50%; /* Deixa a imagem redonda */
+}
+
+.icon {
+    max-height: 40px;
+}
+
+.icon:hover {
+    filter: brightness(1.3); /* Torna o ícone mais claro ao passar o mouse */
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo branco transparente */
+}
+
+.icon:active{
+    transform: scale(0.9);
+}
+
+
+.typing-container{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  
+
+}
+
